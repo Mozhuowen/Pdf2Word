@@ -6,7 +6,6 @@
     -->
     <style name="AppBaseTheme" parent="android:Theme.Holo.Light">
         <item name="android:itemTextAppearance">@style/P2wActionBarOverflow</item>
-        <item name="android:actionOverflowButtonStyle">@style/P2wActionButtonOverflow</item>
         <item name="android:actionBarStyle">@style/P2wActionBar</item>
     </style>
     
@@ -20,9 +19,9 @@
     <style name="P2wActionBarOverflow" parent="@android:style/Widget.ActionButton.Overflow">
         <item name="android:textSize">16sp</item>
     </style>
-    <style name="P2wActionButtonOverflow" parent="@android:style/Widget.Holo.ActionButton.Overflow">
-        <item name="android:src">@drawable/actionbar_more_white</item>
-    </style>
+    <!--<style name="P2wActionButtonOverflow" parent="@android:style/Widget.Holo.ActionButton.Overflow">-->
+        <!--<item name="android:src">@drawable/actionbar_more_white</item>-->
+    <!--</style>-->
 
     <!-- Application theme. -->
     <style name="AppTheme" parent="AppBaseTheme">

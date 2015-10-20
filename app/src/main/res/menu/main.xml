@@ -5,9 +5,11 @@
     <item
         android:id="@+id/action_plus"
         android:icon="@drawable/actionbar_add_white"
+        android:showAsAction="ifRoom"
         android:title="@string/action_plus"/>
     <item 
         android:id="@+id/action_ftp"
+        android:showAsAction="ifRoom"
         android:icon="@drawable/actionbar_ftp"
         android:title="@string/action_ftp"
         />
