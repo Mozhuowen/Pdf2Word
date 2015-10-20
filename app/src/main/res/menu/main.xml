@@ -1,0 +1,21 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.example.wechatsample.MainActivity" >
+
+    <item
+        android:id="@+id/action_plus"
+        android:icon="@drawable/actionbar_add_white"
+        android:title="@string/action_plus"/>
+    <item 
+        android:id="@+id/action_ftp"
+        android:icon="@drawable/actionbar_ftp"
+        android:title="@string/action_ftp"
+        />
+    <item
+        android:id="@+id/action_qa"
+        android:title="@string/activity_qa"/>
+    <item
+        android:id="@+id/action_about"
+        android:title="@string/activity_about"/>
+
+</menu>

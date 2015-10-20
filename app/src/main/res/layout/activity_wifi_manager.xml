@@ -1,0 +1,51 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:fitsSystemWindows="true"
+    android:clipToPadding="false"
+    tools:context="com.superpdf2word.MainActivity" >
+   
+    <RelativeLayout
+        android:gravity="center_vertical|center_horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+        
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center_vertical|center_horizontal"
+            android:padding="10dp" >
+            
+            <TextView
+                android:id="@+id/activity_wifi_manager_hint"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:textColor="@color/grey_light"
+                android:visibility="gone"
+                android:textStyle="bold"
+                android:text="@string/wifihint" />
+            
+            <TextView
+                android:id="@+id/activity_wifi_manager_toggleservice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp"
+                android:background="@color/basecolor"
+                android:textColor="@color/grey_light"
+                android:textStyle="bold"
+                android:textSize="16sp"
+                android:text="启动服务" />
+            
+        </LinearLayout>
+        
+    </RelativeLayout>
+
+</RelativeLayout>

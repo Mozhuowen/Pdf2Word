@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.superpdf2word"
+    android:versionCode="2"
+    android:versionName="2.0" >
+
+    <uses-sdk
+        android:minSdkVersion="14"
+        android:targetSdkVersion="22" />
+
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS"/>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_MULTICAST_STATE"/>
+
+    <application
+        android:name="com.superpdf2word.PWApplication"
+        android:allowBackup="true"
+        android:icon="@drawable/ic_logo"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name =".WifiManager"
+            android:label="@string/activity_ftp">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.superpdf2word.MainActivity" />
+        </activity>
+        <activity
+            android:name=".AboutActivity"
+            android:label="@string/activity_about">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.superpdf2word.MainActivity" />
+        </activity>
+        <activity
+            android:name=".FAQActivity"
+            android:label="@string/activity_qa">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.superpdf2word.MainActivity" />
+        </activity>
+        <activity
+            android:name="lecho.lib.filechooser.FilechooserActivity"
+            android:label="@string/app_name" >
+        </activity>
+
+        <service
+            android:name=".PWService" >
+            <intent-filter >
+                <action android:name="com.superpdf2word.PWService"></action>
+            </intent-filter>
+        </service>
+        <service android:name="com.superpdf2word.UpdateService" />
+
+        <!-- ftps -->
+        <activity android:name="be.ppareit.swiftp.gui.FsPreferenceActivity" />
+        <service android:name="be.ppareit.swiftp.FsService" />
+        <receiver
+            android:name="be.ppareit.swiftp.gui.FsNotification"
+            android:exported="false" >
+            <intent-filter>
+                <action android:name="be.ppareit.swiftp.FTPSERVER_STARTED" />
+                <action android:name="be.ppareit.swiftp.FTPSERVER_STOPPED" />
+            </intent-filter>
+        </receiver>
+        <service android:name="be.ppareit.swiftp.NsdService" />
+        <receiver
+            android:name="be.ppareit.swiftp.NsdService$StartStopReceiver"
+            android:exported="false" >
+            <intent-filter>
+                <action android:name="be.ppareit.swiftp.FTPSERVER_STARTED" />
+                <action android:name="be.ppareit.swiftp.FTPSERVER_STOPPED" />
+            </intent-filter>
+        </receiver>
+        <!-- Don't export this receiver in free, this clashes with paid -->
+        <receiver
+            android:name="be.ppareit.swiftp.RequestStartStopReceiver"
+            android:exported="true" >
+            <intent-filter>
+                <action android:name="be.ppareit.swiftp.ACTION_START_FTPSERVER" />
+                <action android:name="be.ppareit.swiftp.ACTION_STOP_FTPSERVER" />
+            </intent-filter>
+        </receiver>
+
+        <receiver
+            android:icon="@drawable/ic_launcher"
+            android:label="@string/swiftp_name"
+            android:name="be.ppareit.swiftp.gui.FsWidgetProvider"
+            android:exported="false" >
+            <intent-filter >
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
+                <action android:name="be.ppareit.swiftp.FTPSERVER_STARTED" />
+                <action android:name="be.ppareit.swiftp.FTPSERVER_STOPPED" />
+            </intent-filter>
+            <meta-data
+                android:name="android.appwidget.provider"
+                android:resource="@xml/widget_info" />
+        </receiver>
+        <service android:name="be.ppareit.swiftp.gui.FsWidgetProvider$UpdateService" />
+    </application>
+
+</manifest>

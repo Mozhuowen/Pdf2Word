@@ -1,0 +1,32 @@
+<resources>
+
+    <!--
+        Base application theme, dependent on API level. This theme is replaced
+        by AppBaseTheme from res/values-vXX/styles.xml on newer devices.
+    -->
+    <style name="AppBaseTheme" parent="android:Theme.Material.Light">
+        <item name="android:colorPrimaryDark">@color/primary_dark_material_light</item>
+        <item name="android:itemTextAppearance">@style/P2wActionBarOverflow</item>
+        <item name="android:actionOverflowButtonStyle">@style/P2wActionButtonOverflow</item>
+    </style>
+    
+    <style name="P2wActionBar" parent="@android:style/Widget.Holo.Light.ActionBar.Solid">
+        <item name="android:titleTextStyle">@style/P2wActionBarTitleText</item>
+    </style>
+     <style name="P2wActionBarTitleText" parent="@android:style/TextAppearance.Holo.Widget.ActionBar.Title">
+        <item name="android:textColor">@color/grey_light</item>
+        <item name="android:textSize">17sp</item>
+    </style>
+    <style name="P2wActionBarOverflow" parent="@android:style/Widget.Material.Light.ActionButton.Overflow">
+        <item name="android:textSize">16sp</item>
+    </style>
+    <style name="P2wActionButtonOverflow" parent="@android:style/Widget.Material.Light.ActionButton.Overflow">
+        <item name="android:src">@drawable/actionbar_more_white</item>
+    </style>
+
+    <!-- Application theme. -->
+    <style name="AppTheme" parent="AppBaseTheme">
+        <!-- All customizations that are NOT specific to a particular API-level can go here. -->
+    </style>
+
+</resources>

@@ -1,0 +1,23 @@
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="60dp"
+    android:background="@color/white"
+    android:gravity="center_horizontal|center_vertical"
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+   
+    <TextView 
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:text="正在上传"
+        />   
+    <ProgressBar
+        android:id="@+id/dialog_progressbar_bar"
+        android:layout_width="match_parent"
+        android:layout_height="5dp"
+        android:layout_margin="2dp"
+        android:max="100"
+        android:progress="0"
+        style="?android:attr/progressBarStyleHorizontal" />
+</LinearLayout>

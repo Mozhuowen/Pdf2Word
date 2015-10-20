@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">PDF转Word</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="activity_ftp">FTP文件管理</string>
+    <string name="activity_qa">常见问题</string>
+    <string name="activity_about">关于</string>
+    
+    <string name="toast_uploadfilesize">只能转换10M大小以内文件</string>
+    <string name="toast_uploadrepeat_file">该文件已经选择过</string>
+    
+    <string name="stat">状态：%1$s</string>
+    <string name="wordpath">路径： %1$s</string>
+    <string name="alteropenword">建议使用Office Word For Android打开文件</string>
+    <string name="alterupload">PDF转WORD将使用云计算技术进行文档转换，完成转换后我们将删除您的所有上传文件，服务器不会保存您的任何文件及副本。</string>
+    <string name="wifihint">请在“我的电脑”地址栏中输入：\nftp://p2w:p2w@%1$s\n安卓文件系统路径：\n%2$s</string>
+    <string name="down_fail">下载失败</string>
+    <string name="is_downing">正在下载</string>
+    <string name="down_sucess">下载成功</string>
+    
+    <!-- action bar -->
+    <string name="action_search">搜索</string>
+    <string name="action_plus">功能</string>
+    <string name="action_ftp">ftp文件管理</string>
+    <string name="action_album">我的相册</string>
+    <string name="action_collection">我的收藏</string>
+    <string name="action_card">我的银行卡</string>
+    <string name="action_feed">意见反馈</string>
+    <string name="plus_group_chat">发起群聊</string>
+    <string name="plus_add_friend">添加朋友</string>
+    <string name="plus_video_chat">视频聊天</string>
+    <string name="plus_scan">扫一扫</string>
+    <string name="plus_take_photo">拍照分享</string>
+    
+    <!-- ftps -->
+    <string name="swiftp_name">FTP Server</string>
+    <string name="running_label">FTP Server</string>
+    <string name="running_summary_stopped">Toggle the state of the ftp server</string>
+    <string name="running_summary_started">at %s</string>
+    <string name="running_summary_failed">Failed to start the FTP server, not connected to the local network (wifi or ethernet)?</string>
+    <string name="market_version_label">Market version</string>
+    <string name="market_version_summary">
+        This is the FTP Server Demo version.
+        Support development by getting the FTP Server from the android market.
+        Click here to go to the market.</string>
+    <string name="settings_label">Settings</string>
+    <string name="user_label">User</string>
+    <string name="loginsettings_label">Login settings...</string>
+    <string name="username_label">Username</string>
+    <string name="password_label">Password</string>
+    <string name="show_password_label">Display password</string>
+    <string name="anonymous_label">Anonymous</string>
+    <string name="allow_anonymous_label">Allow anonymous login</string>
+    <string name="anonymous_summary">Anonymous logins are only allowed read access</string>
+    <string name="advancedsettings_label">Advanced settings...</string>
+    <string name="portnumber_label">Port Number</string>
+    <string name="chroot_label">Stay in folder</string>
+    <string name="acceptwifi_label">Accept connection from wifi</string>
+    <string name="wakelock_label">Keep device awake (full CPU speed)</string>
+    <string name="extra_label">Extra</string>
+    <string name="help_label">Help...</string>
+    <string name="about_label">About...</string>
+    <string name="help_dlg_title">FTP Server Help</string>
+    <string name="help_dlg_message">\
+Thanks for using FTP Server (SwiFTP)! Here are some brief usage instructions. More
+information can be found at http://ppareit.github.com/swiftp/.\n\n\
+\
+This program allows you to run an ftp server on your android device. This means that any
+program can access the files on your device while the ftp server is running. For example,
+entering \'ftp://...\' in the firefox url bar will allow you to browse the files on your
+device from a desktop pc or a laptop.\n\n
+\
+By default, the user name and password are both \'ftp\', you should change them. You use
+this username and password when accessing the server.\n\n
+\
+There is a configuration option (\"keep phone awake\") that fixes a problem where
+file transfers go slow or stop completely when the phone sleeps. If you have this
+problem, check this box and restart the program. Your phone will stay awake as long as
+the server is running.\n\n
+\
+For power and security reasons, it is recommended that the server be stopped after use.\n\n\
+\
+If something is not working the way you expect it to, please report it to Pieter Pareit
+(pieter.pareit@gmail.com).\n\n\
+\
+The development of this open source program is supported by buying this program through
+the google play store. You can follow the development at https://github.com/ppareit/swiftp .
+To have an idea on the features that will be implemented, see the issue tracker at
+https://github.com/ppareit/swiftp/issues .\n\n
+    </string>
+    <string name="about_dlg_title">FTP Server About</string>
+    <string name="about_dlg_message">
+        <b>Description: </b>
+        FTP Server (SwiFTP) allows you to run an ftp server on your android device.\n\n\
+        <b>Website:</b>
+        http://ppareit.github.com/swiftp/\n\n
+        <b>Current maintainer:</b>
+        Pieter Pareit (pieter.pareit@gmail.com)\n\n
+        <b>Programming: </b>\
+        Dave Revell (dave.revell@gmail.com), Pieter Pareit (pieter.pareit@gmail.com)\n\n\
+        <b>Artwork:</b>
+        Birgit Niemegeers\n\n
+        <b>License: </b>
+        GNU General Public License v3.0\n\n
+    </string>
+    <string name="notif_server_starting">Starting at %s</string>
+    <string name="notif_title">FTP Server is running</string>
+    <string name="notif_text">at %s</string>
+    <string name="notif_stop_text">Stop server</string>
+
+    <string name="nsd_servername_postfix">FTP Server</string>
+
+    <!-- old strings -->
+    <string name="cant_get_url">Can\'t retrieve url</string>
+    <string name="unknown">unknown</string>
+    <string name="ok">OK</string>
+    <string name="username_validation_error">The password must consist of 1 or more alphanumeric characters. No other characters are allowed.</string>
+    <string name="password_validation_error">The password must consist of 1 or more alphanumeric characters. No other characters are allowed.</string>
+    <string name="port_validation_error">The port number must be in the range 1 to 65535.</string>
+    <string name="wifi_state_receiver_label">WifiStateReceiver</string>
+    <string name="pst_connecting">connecting</string>
+    <string name="pst_connected">connected</string>
+    <string name="pst_failed">failed</string>
+    <string name="pst_unreachable">unreachable</string>
+    <string name="pst_disconnected">disconnected</string>
+    <string name="storage_warning">Warning: storage is not available. You may want to unmount it.</string>
+    <string name="widget_name">FTP Server Widget</string>
+    
+    <!-- faq -->
+    <string name="faq_title_1">这个什么鬼怎么使用？</string>
+    <string name="faq_answer_1">本宝宝可以把你心爱的pdf文件转成word格式，主界面点加号选择文件上传成功后等待转换成功便会自动下载。</string>
+    <string name="faq_title_2">怎么转半天都不成功？</string>
+    <string name="faq_answer_2">感谢大家的厚爱，这个产品开放后没想到有这么多人使用，由于经费问题，后台只有1台廉价阿里云服务器在进行转换处理，因此很有可能不能及时处理你的转换请求，如果你等待一段时间后状态依然是正在转换，你可以退出app，第二天再打开一般应该就会转换好了（任务多的时候排一天还不一定能轮到你），由于是免费的东西资源很有限，请理解（不理解你又不能把我怎么样所以还是理解吧）。</string>
+	<string name="faq_title_3">怎么有时候会转换失败，有时候转出来的文档有的是乱码，有的是图片类型，这不是骗人吗？</string>
+	<string name="faq_answer_3">呵呵嗒，转换失败可能是你的pdf过于复杂，也有能是你的pdf有密码保护，也有可能是你的pdf有防止读写的保护。转换有乱码是识别有问题，这是没有办法的。转换后内容是图片类型，原因是你的pdf中的内容本来就是图片嵌在其中，特别是一些影印书籍的pdf文件，这种类型是暂时转不成文字格式的word的。本宝宝的主要转换对象是一些没有密码和读写保护的并且内容是非图片格式的pdf，如果你不能确定是否符合这个条件，那么你转一下就知道了。</string>
+	<string name="faq_title_4">为什么只能转换10M大小以内的文件？</string>
+	<string name="faq_answer_4">额...我只是个程序猿，租不起高大上的服务器和带宽，后台的处理能力有限，所以只能这样了。如果你的文件过大可以使用其他软件切割成多块小于10M的pdf文件然后再转换吧。如果你有兴趣提供服务器或者带宽，联系我mozhuowen@gmail.com</string>
+</resources>

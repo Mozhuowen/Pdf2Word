@@ -1,0 +1,50 @@
+<RelativeLayout 
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/listitem_layoutview"
+    android:padding="5dp"
+    android:background="@color/click_selector" xmlns:android="http://schemas.android.com/apk/res/android">
+    
+    <ImageView
+        android:id="@+id/listitem_icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:src="@drawable/icon_pdf" />
+    
+    <LinearLayout
+        android:layout_toRightOf="@id/listitem_icon"
+        android:layout_marginLeft="10dp"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+        
+        <TextView
+            android:id="@+id/listitem_filetitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="大数据研究_李一男"
+            android:lines="1"
+            android:textColor="#82858b"
+            android:textStyle="bold"/>
+        
+        <TextView
+            android:id="@+id/listitem_stat"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="状态： 正在转换"
+            android:lines="1"
+            android:textColor="#82858b"/>
+        
+        <TextView
+            android:id="@+id/listitem_wordpath"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="文件路径： /data/words/asdfsd.docx"
+            android:textColor="#82858b"/>
+        
+    </LinearLayout>
+    
+</RelativeLayout>
